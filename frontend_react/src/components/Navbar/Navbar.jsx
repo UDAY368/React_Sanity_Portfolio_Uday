@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {images} from '../../constants';
+// import {images} from '../../constants';
 
 import './Navbar.scss';
 import {HiMenuAlt4, HiX} from 'react-icons/hi';
@@ -12,7 +12,8 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <a href='/'><img src={images.logo} alt="logo" /></a>
+        {/* <a href='/'><img src={images.logo} alt="logo" /></a> */}
+        <a href="/" className='app__navbar-logo-head'>Portfolio.</a>
       </div>
       <ul className='app__navbar-links'>
         {['home','about','work','skills','contact'].map((item) =>(
